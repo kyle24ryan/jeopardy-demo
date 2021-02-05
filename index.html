@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jeopardy</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="   crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.3/TweenMax.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!-- <audio autoplay>
+            <source src="https://www.myinstants.com/media/sounds/jeopardy-intro.mp3" type="audio/mpeg">
+        </audio>  -->
+        <audio id="boardAudio" src="https://www.myinstants.com/media/sounds/jeopardy-board-fill-sound-2016-present-cleaner-version.mp3"></audio>
+        <audio id="correct" src="https://www.myinstants.com/media/sounds/rightanswer.mp3"></audio>
+        <audio id="wrong" src="https://www.myinstants.com/media/sounds/times-up.mp3"></audio>
+        <main class="hero">
+            <div class="container text-center">
+                <!-- <img src="jeopardy.png" alt="Jeopardy Logo"> -->
+                <h1 id="title">Jeopardy</h1>
+                <div id="board" class="d-flex flex-no-wrap">
+                </div>
+                <div >
+                    <h1 id="score" class="float-right pt-3 pb-3 pl-3">0</h2>
+                    <h1 id="scoreTxt" class="float-right p-3">Score:</h1>
+                </div>
+            </div>
+        </main>
+        <div class="page-container">
+        </div>
+    </body>
+</html>
